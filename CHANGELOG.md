@@ -10,13 +10,17 @@ All notable changes to this project will be documented here.
 
 
 
-\## v1.0.0
+\## v1.1.0
 
 \### Added
 
-\- Add note functionality
+\- Delete notes functionality
 
-\- View notes functionality
 
-\- Basic CLI interface
+
+\### Improved
+
+\- Better user interface with numbering
+
+\- Confirmation before deleting notes
 

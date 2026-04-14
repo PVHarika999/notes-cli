@@ -3,7 +3,8 @@ notes = []
 while True:
     print("\n1. Add Note")
     print("2. View Notes")
-    print("3. Exit")
+    print("3. Delete All Notes")
+    print("4. Exit")
 
     choice = input("Enter your choice: ")
 
@@ -13,11 +14,22 @@ while True:
         print("Note added!")
 
     elif choice == "2":
-        print("\nYour Notes:")
-        for n in notes:
-            print("-", n)
+        if not notes:
+            print("No notes available.")
+        else:
+            print("\nYour Notes:")
+            for i, n in enumerate(notes, start=1):
+                print(f"{i}. {n}")
 
     elif choice == "3":
+        confirm = input("Are you sure you want to delete all notes? (yes/no): ")
+        if confirm.lower() == "yes":
+            notes.clear()
+            print("All notes deleted!")
+        else:
+            print("Deletion cancelled.")
+
+    elif choice == "4":
         print("Exiting...")
         break
 
