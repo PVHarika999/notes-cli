@@ -10,17 +10,23 @@ All notable changes to this project will be documented here.
 
 
 
-\## v1.1.0
+\## v2.0.0
 
 \### Added
 
-\- Delete notes functionality
+\- File storage for notes (notes are now saved permanently in notes.txt)
+
+\- Persistent data support
+
+
+
+\### Changed
+
+\- Upgraded from in-memory storage to file-based storage
 
 
 
 \### Improved
 
-\- Better user interface with numbering
-
-\- Confirmation before deleting notes
+\- Data is no longer lost after closing the applicationing notes
 
